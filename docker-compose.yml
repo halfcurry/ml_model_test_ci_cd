@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: halfcurry/ml_model_test_ci_cd:latest
+    container_name: ml_model_test_ci_cd
+    ports:
+      - "8000:8000"
