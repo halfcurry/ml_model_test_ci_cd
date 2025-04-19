@@ -21,6 +21,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip
           pip install pytest
+          pip install -r requirements/requirements.txt
           pip install -r requirements/requirements-test.txt
 
       - name: Run tests
@@ -41,4 +42,5 @@ jobs:
 
       - name: Log out from Docker
         run: docker logout
+
       
